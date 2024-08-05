@@ -1,0 +1,71 @@
+:root {
+  --main-bg-color: #F4A261;
+  --primary: #2A9D8F;
+  --primary-button-hover: #02c4ad;
+  --secondary: #F4A261;
+  --secondary-button-hover: #f39141;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 760px;
+  min-height: 80vh;
+  margin-top: 15vh;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.content-wrapper {
+  padding: 1.5rem;
+}
+
+.header {
+  background-color: #2A9D8F;
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+.header > div {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.header > div:nth-child(1) {
+  background-color: #E9C46A;
+}
+
+.header > div:nth-child(2) {
+  background-color: #F4A261;
+}
+
+.header > div:nth-child(3) {
+  background-color: #83FF06;
+}
+
+.btn-add-budget {
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn-add-budget:hover {
+  background-color: var(--primary-button-hover);
+}
+
+.btn-add-expense {
+  background-color: var(--secondary);
+  border: none;
+}
+
+.btn-add-expense:hover {
+  background-color: var(--secondary-button-hover)
+}
+
+
+
+
+.progress-bar-custom {
+  background-color: var(--primary) !important
+}
