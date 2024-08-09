@@ -1,7 +1,13 @@
 import { Button, Card, CardBody, CardTitle, ProgressBar, Stack } from "react-bootstrap"
 import { currencyFormatter } from "../utils";
 
-function BudgetCard({name, amount, max, onAddExpenseClick, onViewExpenseClick}) {
+function BudgetCard({
+    name, 
+    amount, 
+    max, 
+    onAddExpenseClick, 
+    onViewExpenseClick
+}) {
     
     return (
         <Card>

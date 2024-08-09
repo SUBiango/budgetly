@@ -35,12 +35,16 @@ export const BudgetsProvider = ({ children }) => {
         })
     }
 
-    function deleteBudget() {
-        console.log('del')
+    function deleteBudget(id) {
+        setBudgets(prevBudgets => {
+            return prevBudgets.filter(budget => budget.id != id)
+        })
     }
 
-    function deleteExpense() {
-        console.log('del')
+    function deleteExpense(id) {
+        setExpenses(prevExpense => {
+            return prevExpense.filter(expense => expense.id != id)
+        })
     }
 
     return (
