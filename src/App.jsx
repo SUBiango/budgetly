@@ -7,6 +7,7 @@ import './App.css'
 import AddBudgetModal from './components/AddBudgetModal';
 import AddExpenseModal from './components/AddExpenseModal';
 import ViewExpenseModal from './components/ViewExpenseModal';
+import Overview from './components/OverView';
 import { useBudgets } from './context/BudgetContext';
 
 function App() {
@@ -26,14 +27,18 @@ function App() {
     <>
       <Container className='container'>
         <Header />
-          <Stack direction='horizontal' gap="3" className='p-4'>
-            <h1 className='me-auto'>Budgets</h1>
-            <Button variant='primary' className='btn-add-budget' onClick={() => setShowAddBudgetModal(true)}> Add Budget </Button>
-            <Button className='btn-add-expense' onClick={openAddExpenseModal}>Add Expense</Button>
-          </Stack>
+        
+        <Stack direction='horizontal' gap="3" className='p-4'>
+          <h1 className='me-auto'>Budgets</h1>
+          <Button variant='primary' className='btn-add-budget' onClick={() => setShowAddBudgetModal(true)}> Add Budget </Button>
+          <Button className='btn-add-expense' onClick={openAddExpenseModal}>Add Expense</Button>
+        </Stack>
+
 
         <div className='content-wrapper'>
 
+        <Overview />
+        
           <div style={{
             display: 'grid',
             gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",

@@ -9,10 +9,13 @@
 .container {
   background-color: #fff;
   max-width: 760px;
-  min-height: 80vh;
   margin-top: 15vh;
   margin-bottom: 2rem;
   padding: 0;
+}
+
+.card-background {
+  background-color: #f39141;
 }
 
 .content-wrapper {
@@ -63,9 +66,21 @@
   background-color: var(--secondary-button-hover)
 }
 
-
-
-
 .progress-bar-custom {
   background-color: var(--primary) !important
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.overview-card-title {
+  color: var(--primary);
+  font-weight: bold;
 }

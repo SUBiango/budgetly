@@ -4,7 +4,8 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const BudgetContext = React.createContext()
 
-export const UNCATEGORIZED_BUDGET_ID = "Uncategorised"
+// export const UNCATEGORIZED_BUDGET_ID = "Uncategorised"
+// Handle uncategorized later
 
 export function useBudgets() {
     return useContext(BudgetContext)
@@ -13,7 +14,6 @@ export function useBudgets() {
 export const BudgetsProvider = ({ children }) => {
     const [budgets, setBudgets] = useLocalStorage("budgets", [])
     const [expenses, setExpenses] = useLocalStorage("expenses", [])
-    // const [summary, setSummary] = useState()
 
     function getBudgetExpenses(budgetId) {
         return expenses.filter(expense => expense.budgetId === budgetId)
