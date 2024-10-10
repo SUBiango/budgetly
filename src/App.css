@@ -84,3 +84,30 @@
   color: var(--primary);
   font-weight: bold;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 0;
+    padding: 0;
+  }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .h1 {
+      padding-left: 0.7rem;
+    }
+
+    .content-wrapper {
+      padding: 1rem;
+    }
+
+    .overview {
+      padding: 1rem;
+    }
+}
