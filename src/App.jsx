@@ -28,10 +28,12 @@ function App() {
       <Container className='container'>
         <Header />
         
-        <Stack direction='horizontal' gap="3" className='p-4'>
-          <h1 className='me-auto'>Budgelty</h1>
-          <Button variant='primary' className='btn-add-budget' onClick={() => setShowAddBudgetModal(true)}> Add Budget </Button>
-          <Button className='btn-add-expense' onClick={openAddExpenseModal}>Add Expense</Button>
+        <Stack direction='horizontal' gap="3" className='p-4 header-content'>
+          <h1 className='me-auto h1'>Budgelty</h1>
+          <div className='d-flex gap-3 '>
+            <Button variant='primary' className='btn-add-budget' onClick={() => setShowAddBudgetModal(true)}> Add Budget </Button>
+            <Button className='btn-add-expense' onClick={openAddExpenseModal}>Add Expense</Button>
+          </div>
         </Stack>
 
 
@@ -39,9 +41,9 @@ function App() {
 
         <Overview />
         
-          <div style={{
+          <div className='budget-card-container' style={{
             display: 'grid',
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))",
             gap: "1.4rem",
             alignItems: "flex-start"
           }}>

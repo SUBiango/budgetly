@@ -10,7 +10,7 @@ function BudgetCard({
 }) {
     
     return (
-        <Card>
+        <Card className="budget-card">
             <CardBody>
                 <CardTitle className="d-flex justify-content-between 
                     align-items-baseline fw-normal mb-3">
